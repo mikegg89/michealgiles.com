@@ -6,30 +6,57 @@
     <title>Micheal Giles</title>
   </head>
   <body>
+    <header>
+      <h1>Micheal Giles</h1>
+    </header>
     <nav class="top-nav">
       <ul class="top-nav__list">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Contact Me</li>
+        <li id="home"><span>Home</span></li>
+        <li id="about"><span onClick={goToAboutMe()}>About Me</span></li>
+        <li id="skills"><span>Skills</span></li>
+        <li id="contact-me"><span>Contact Me</span></li>
       </ul>
     </nav>
     <main class="main">
       <div class="home">
-        <h1>Under Construction!</h1>
+        <img src="./images/me-and-cait.jpg" alt="">
       </div>
       <div class="about">
-
+        <h1>About Me</h1>
+        <p>
+          I am Micheal Giles, I'm 29 and I live in the Texas DFW area with my
+          wife and 2 kids, I enjoy learning, developing, stocks (although im not
+          the best at investing).
+        </p>
+        <p>
+          By day i'm a Natural Gas plant operator for Enlink Midstream,
+          and by night im a developer for Pactum.io.
+        </p>
       </div>
       <div class="skills">
-
+        <h1>Skills</h1>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>javascript</li>
+          <li>React/Redux</li>
+          <li>SQL</li>
+          <li>Node.js</li>
+          <li>express</li>
+          <li>mongo.db</li>
+          <li>web3</li>
+          <li>solidity</li>
+          <li>git</li>
+        </ul>
       </div>
       <div class="contact-me">
-
+        <h1>Contact Me</h1>
+        <p>micheal.giles@pactum.io</p>
       </div>
     </main>
     <footer class="footer">
-      <h5>Micheal Giles</h5>
+      <h5 id='copyright'>Micheal Giles</h5>
     </footer>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
