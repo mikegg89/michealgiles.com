@@ -1,72 +1,146 @@
-html, body {
+/*
+ Color Theme
+#1E3C76
+#5E6D8B
+#3E5176
+#11244B
+#041535
+*/
+
+
+html {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+  letter-spacing: 2px;
+  font-family: fantasy;
+  background-image: url(./images/grey_wash_wall.png);
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body {
+  min-height: 110%;
+  width: 100%;
+  margin: 0px;
+  bottom: 0px;
+  overflow: auto;
+  background: rgba(32, 32, 32, 0.8);
+
+}
+
+header {
+  height: 100px;
+  color: white;
+  background-color: rgba(30, 60, 118, 0.8);
+}
+
+header h1 {
   margin: 0;
-  padding: 0;
-  background-color: gray;
+  padding: 30px;
 }
 
 .top-nav {
   border-radius: 2px;
-  position: fixed;
+  position: relative;
+  display: flex;
   left: 0;
   top: 0;
   width: 100%;
-  background-color: darkgray;
-  text-align: center;
   height: 50px;
+  background-color: rgba(4, 21, 53, 0.8);
+  color: black;
+  text-align: center;
+  border-top: 2px solid rgba(94, 109, 139, 0.5);
+  border-bottom: 2px solid rgba(94, 109, 139, 0.5);
 }
+
 
 .top-nav__list {
   display: inline-block;
   list-style: none;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  width: 300px;
-  float: right;
+  margin: 12px auto;
 }
 
 .top-nav__list li {
+  padding-top: 5px;
+  margin-top: -4px;
   display: inline-block;
   list-style: none;
-  margin-left: 20px;
+  margin-left: 5px;
+  border: 1px solid rgb(204, 211, 226);
+  border-radius: 1px;
+  background: rgb(230, 225, 230);
+  width: 120px;
+  vertical-align: baseline;
+}
+
+#contact-me {
+  height: 34px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 60% 75%, 0% 75%);
 }
 
 .main {
   height: 78vh;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
+
 }
 
 .home {
   margin: 50px;
-  background-color: lightgray;
+  padding: 10px;
+  color: white;
+  background-color: #3E5176;
   border-radius: 2px;
-  height: 80%;
 }
 
-.home h1{
-  margin-top: 20px;
-  padding-top: 20px;
+
+.home img {
+  width: 70%;
+  height: 70%;
+  padding: 50px;
 }
 
 .about {
-
+  padding: 10px;
+  margin: 50px;
+  color: white;
+  background-color: #11244B;
+  border-radius: 2px;
 }
 
 .skills {
+  padding: 10px;
+  margin: 50px;
+  color: white;
+  background-color: #5E6D8B;
+  border-radius: 2px;
+}
 
+.skills li {
+  list-style: none;
+  margin-left: -30px;
 }
 
 .contact-me {
-
+  padding: 10px;
+  margin: 40px;
+  margin-bottom: 150px;
+  color: white;
+  background-color: #041535;
+  border-radius: 2px;
 }
 
-.footer {
-  position: fixed;
+footer {
+  color: rgb(204, 211, 226);
   left: 0;
-  bottom: 0;
+  position: fixed;
+  bottom: 0px;
   width: 100%;
-  background-color: darkgray;
+  border-top: 2px solid rgba(94, 109, 139, 0.5);
+  background-color: rgba(30, 60, 118, 0.8);
   text-align: center;
+  min-height: 60px;
 }
