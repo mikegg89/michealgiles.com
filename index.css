@@ -35,14 +35,14 @@ html, body {
 .main {
   height: 78vh;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .home {
   margin: 50px;
   background-color: lightgray;
   border-radius: 2px;
-  height: 80%;
+  height: 80px;
 }
 
 .home h1{
