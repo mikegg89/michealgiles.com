@@ -62,7 +62,7 @@ header h1 {
   margin: 12px auto;
 }
 
-.top-nav__list li {
+.nav-item {
   padding-top: 5px;
   margin-top: -4px;
   display: inline-block;
@@ -79,6 +79,11 @@ header h1 {
   height: 34px;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 60% 75%, 0% 75%);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
 }
 
 .main {
@@ -140,8 +145,9 @@ header h1 {
 footer {
   color: rgb(204, 211, 226);
   left: 0;
-  position: fixed;
+  position: relative;
   bottom: 0px;
+  padding-bottom: 0px;
   width: 100%;
   border-top: 2px solid rgba(94, 109, 139, 0.5);
   background-color: rgba(30, 60, 118, 0.8);
