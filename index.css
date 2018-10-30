@@ -60,10 +60,11 @@ html, body {
 }
 
 .footer {
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  background-color: darkgray;
-  margin-bottom: 0px;
   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkgray;
+  color: white;
+  text-align: center;
 }
