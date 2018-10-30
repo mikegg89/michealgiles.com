@@ -35,6 +35,7 @@ html, body {
 .main {
   height: 78vh;
   text-align: center;
+  margin-top: 50px;
 }
 
 .home {
