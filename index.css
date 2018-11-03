@@ -7,6 +7,32 @@
 #041535
 */
 
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    .top-nav {
+      min-height: 100px;
+    }
+
+    .top-nav li {
+      margin-top: 2px;
+    }
+
+    .header {
+      margin-top: 100px;
+    }
+
+    .skills ul{
+      height: 300px;
+      width: 18%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+
+}
+
 
 html {
   width: 100%;
@@ -30,19 +56,23 @@ body {
 }
 
 header {
-  height: 100px;
+  margin-top: 60px;
+  height: 125px;
   color: white;
   background-color: rgba(30, 60, 118, 0.8);
+  border-bottom: 2px solid black;
 }
 
 header h1 {
+  font-size: 50px;
   margin: 0;
   padding: 30px;
+  padding-left: 12%;
 }
 
 .top-nav {
   border-radius: 2px;
-  position: relative;
+  position: fixed;
   display: flex;
   left: 0;
   top: 0;
@@ -50,9 +80,11 @@ header h1 {
   height: 50px;
   background-color: rgba(4, 21, 53, 0.8);
   color: black;
+  font-weight: bolder;
   text-align: center;
-  border-top: 2px solid rgba(94, 109, 139, 0.5);
-  border-bottom: 2px solid rgba(94, 109, 139, 0.5);
+  font-size: 16px;
+  border-top: 5px solid rgba(94, 109, 139, 0.5);
+  border-bottom: 5px solid rgba(94, 109, 139, 0.5);
 }
 
 
@@ -90,7 +122,7 @@ header h1 {
   height: 100%;
   text-align: center;
   padding-top: 50px;
-
+  font-size: 1.5em;
 }
 
 .home {
@@ -99,8 +131,8 @@ header h1 {
   color: white;
   background-color: #3E5176;
   border-radius: 2px;
+  box-shadow: 1px 2px 2px black;
 }
-
 
 .home img {
   width: 70%;
@@ -114,6 +146,12 @@ header h1 {
   color: white;
   background-color: #11244B;
   border-radius: 2px;
+  box-shadow: 1px 2px 2px black;
+}
+
+.about p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .skills {
@@ -122,11 +160,28 @@ header h1 {
   color: white;
   background-color: #5E6D8B;
   border-radius: 2px;
+  box-shadow: 1px 2px 2px black;
+}
+
+.skills ul {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px rgb(32, 32, 32);
 }
 
 .skills li {
+  display: inline-block;
   list-style: none;
-  margin-left: -30px;
+  margin-left: -20px;
+}
+
+.skills img {
+  height: 40%;
+  width: 40%;
+  margin-top: 20px;
 }
 
 .contact-me {
@@ -135,6 +190,11 @@ header h1 {
   color: white;
   background-color: #041535;
   border-radius: 2px;
+  box-shadow: 1px 2px 2px black;
+}
+
+.contact-me button, textarea, input {
+  font-size: 0.8em;
 }
 
 .bottom {
@@ -150,7 +210,18 @@ footer {
   padding-bottom: 0px;
   width: 100%;
   border-top: 2px solid rgba(94, 109, 139, 0.5);
+  border-bottom: 2px solid rgba(94, 109, 139, 0.5);
   background-color: rgba(30, 60, 118, 0.8);
   text-align: center;
-  min-height: 60px;
+  min-height: 50px;
+}
+
+footer h5 {
+  margin-bottom: 10px;
+}
+
+footer img {
+  margin-top: 5px;
+  margin-bottom: -30px;
+  width: 40px;
 }
