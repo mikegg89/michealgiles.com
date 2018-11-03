@@ -17,18 +17,21 @@
   </head>
   <body id="page-top">
     <header class="header">
-      <h1>Micheal Giles</h1>
+      <ul>
+        <li><img class="profile-img" src="./images/me.png" alt="Micheal-img"></li>
+        <li><h1>Micheal Giles</h1></li>
+      </ul>
     </header>
     <nav  id="top-nav" class="top-nav">
       <ul class="top-nav__list">
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#page-top">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item" id="contact-me">
           <a class="nav-link" href="#Contact-me">Contact Me</a>
@@ -36,9 +39,9 @@
       </ul>
     </nav>
     <main class="main">
-      <div class="home" id="home">
+      <!-- <div class="home" id="home">
         <img src="./images/me-and-cait.jpg" alt="">
-      </div>
+      </div> -->
       <div class="about" id="about">
         <h2>Hi, I'm Micheal.</h2>
         <p>
@@ -67,6 +70,40 @@
           <li><img src="./images/skills/git-img.png" alt="git-img"> </li>
         </ul>
       </div>
+      <div class="projects" id="projects">
+        <h1>Projects</h1>
+          <h2>Repositories</h2>
+          <ul>
+            <li>
+              <a target=”_blank” href="https://github.com/mikegg89/michealgiles.com">michealgiles.com</a>
+              <p>
+                Portfolio website made without a framework, just html, css,
+                JavaScript, and jQuery.
+              </p>
+            </li>
+            <li>
+              <a target=”_blank” href="https://github.com/mikegg89/Compressor_Log">Compressor_Log</a>
+              <img src="./images/projects/comp-log-img.png" alt="comp-log-img">
+              <p>
+                Used Express and SQL to create a site that natural gas
+                operators can log compressor data into and have an alert
+                dependent on temperatures being out of speck.
+              </p>
+            </li>
+            <li>
+              <a target=”_blank” href="https://github.com/mikegg89/cait-cake">cait-cakes</a>
+              <p>
+                Website for my wifes business, I used express and mysql.
+              </p>
+            </li>
+            <li class='projects-last-li'>
+              <a target=”_blank” href="https://github.com/mikegg89/Zombie-Legends-from-2013">Zombie-Legends-from-2013</a>
+              <p>
+                This is a game I was working on in july of 2013 with lua and the corona sdk
+              </p>
+            </li>
+        </ul>
+      </div>
       <div class="contact-me" id="Contact-me">
         <h1>Contact Me</h1>
         <form name="contact" netlify>
@@ -88,7 +125,7 @@
       </div>
       <div class="bottom"></div>
       <footer class="footer">
-        <a  target=”_blank” href="https://www.github.com/mikegg89"><img src="./images/skills/github-img.png" alt="github-img"></a>
+        <a target=”_blank” href="https://www.github.com/mikegg89"><img src="./images/skills/github-img.png" alt="github-img"></a>
 
         <h5 id='copyright'>Micheal Giles</h5>
       </footer>

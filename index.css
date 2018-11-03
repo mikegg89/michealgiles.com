@@ -21,7 +21,31 @@
     }
 
     .header {
-      margin-top: 100px;
+      margin: 0 auto;
+      width: 100%;
+      margin-top: 110px;
+      height: 140px;
+    }
+
+    .header ul {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .header li {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .header img {
+      margin-top: 10px;
+    }
+
+    .header h1 {
+      width: 320px;
+      margin: 10px auto;
+      padding: 0;
     }
 
     .skills ul{
@@ -52,7 +76,16 @@ body {
   bottom: 0px;
   overflow: auto;
   background: rgba(32, 32, 32, 0.8);
+}
 
+header ul {
+  margin-left: 5%;
+  list-style: none;
+  width: 600px;
+}
+
+header li {
+  display: inline-block;
 }
 
 header {
@@ -63,7 +96,14 @@ header {
   border-bottom: 2px solid black;
 }
 
+.profile-img {
+  width: 50px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+
 header h1 {
+  width: 350px;
   font-size: 50px;
   margin: 0;
   padding: 30px;
@@ -125,26 +165,71 @@ header h1 {
   font-size: 1.5em;
 }
 
-.home {
+.projects {
   margin: 50px;
   padding: 10px;
   color: white;
-  background-color: #3E5176;
+  background-color: #5E6D8B;
   border-radius: 2px;
   box-shadow: 1px 2px 2px black;
 }
 
-.home img {
-  width: 70%;
-  height: 70%;
-  padding: 50px;
+.projects img {
+  width: 15em;
+  float: right;
+  margin-left: 10px;
+}
+
+.projects h2 {
+  background: white;
+  color: black;
+  width: 80%;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(32, 32, 32);
+  box-shadow: 1px 2px 2px black;
+}
+
+.projects ul {
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  list-style: none;
+  text-align: justify;
+  background: white;
+  color: black;
+  box-shadow: 1px 2px 2px black;
+}
+
+.projects li {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.projects-last-li {
+  border-bottom: 1px solid white !important;
+}
+
+.projects a {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.projects p {
+  font-size: 15px;
+  padding: 5px;
 }
 
 .about {
   padding: 10px;
   margin: 50px;
   color: white;
-  background-color: #11244B;
+  background-color: #3E5176;
   border-radius: 2px;
   box-shadow: 1px 2px 2px black;
 }
@@ -159,7 +244,7 @@ header h1 {
   padding: 10px;
   margin: 50px;
   color: white;
-  background-color: #5E6D8B;
+  background-color: #11244B;
   border-radius: 2px;
   box-shadow: 1px 2px 2px black;
 }
