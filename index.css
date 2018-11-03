@@ -286,6 +286,7 @@ header h1 {
   height: 40%;
   float: right;
   margin-left: 20px;
+  margin-top: 20px;
   /* -webkit-clip-path: inset(5% 10% 9% 10%);
   clip-path: inset(5% 10% 9% 10%); */
 }
