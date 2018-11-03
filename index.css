@@ -48,9 +48,15 @@
       padding: 0;
     }
 
-    .skills ul{
-      height: 300px;
+    .skills ul {
+      height: 400px;
       width: 18%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+
+    .projects ul {
+      height: 400px;
       overflow: hidden;
       overflow-y: scroll;
     }
