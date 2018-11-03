@@ -61,6 +61,11 @@
       overflow-y: scroll;
     }
 
+    .youtube-video {
+      float: none !important;
+      width: 90% !important;
+    }
+
 }
 
 
@@ -274,6 +279,15 @@ header h1 {
   height: 40%;
   width: 40%;
   margin-top: 20px;
+}
+
+.youtube-video {
+  width: 40%;
+  height: 40%;
+  float: right;
+  margin-left: 20px;
+  /* -webkit-clip-path: inset(5% 10% 9% 10%);
+  clip-path: inset(5% 10% 9% 10%); */
 }
 
 .contact-me {
