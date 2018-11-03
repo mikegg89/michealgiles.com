@@ -43,7 +43,7 @@
     }
 
     .header h1 {
-      width: 340px;
+      display: inline;
       margin: 10px auto;
       padding: 0;
     }
@@ -109,7 +109,7 @@ header {
 }
 
 header h1 {
-  width: 350px;
+  width: 100%;
   font-size: 50px;
   margin: 0;
   padding: 30px;
