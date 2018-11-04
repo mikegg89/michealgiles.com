@@ -305,6 +305,7 @@ header h1 {
 }
 
 .recaptcha {
+  width: 300px;
   margin: 0 auto;
 }
 
