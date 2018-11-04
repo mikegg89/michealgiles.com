@@ -304,6 +304,10 @@ header h1 {
   font-size: 0.8em;
 }
 
+.recaptcha {
+  margin: 0 auto;
+}
+
 .bottom {
   height: 100px;
   width: 100%;
