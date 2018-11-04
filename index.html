@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128471650-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128471650-1');
+    </script>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="./images/m.png" type="image/png">
     <link rel="stylesheet" href="./index.css">
     <title>Micheal Giles</title>
   </head>
-  <body>
-    <header>
-      <h1>Micheal Giles</h1>
+  <body id="page-top">
+    <header class="header">
+      <ul>
+        <li><img class="profile-img" src="./images/me.png" alt="Micheal-img"></li>
+        <li><h1>Micheal Giles</h1></li>
+      </ul>
     </header>
-    <nav class="top-nav">
+    <nav  id="top-nav" class="top-nav">
       <ul class="top-nav__list">
-        <li id="home"><span>Home</span></li>
-        <li id="about"><span onClick={goToAboutMe()}>About Me</span></li>
-        <li id="skills"><span>Skills</span></li>
-        <li id="contact-me"><span>Contact Me</span></li>
+        <li class="nav-item option">
+          <a style="width: 120px" class="nav-link option" href="#page-top">Home</a>
+        </li>
+        <li class="nav-item option">
+          <a class="nav-link option" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item option">
+          <a class="nav-link option" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item option" id="contact-me">
+          <a class="nav-link option" href="#Contact-me">Contact Me</a>
+        </li>
       </ul>
     </nav>
     <main class="main">
-      <div class="home">
-        <img src="./images/me-and-cait.jpg" alt="">
-      </div>
-      <div class="about">
-        <h1>About Me</h1>
+      <div class="about" id="about">
+        <h2>Hi, I'm Micheal.</h2>
         <p>
-          I am Micheal Giles, I'm 29 and I live in the Texas DFW area with my
-          wife and 2 kids, I enjoy learning, developing, stocks (although im not
-          the best at investing).
-        </p>
-        <p>
-          By day i'm a Natural Gas plant operator for Enlink Midstream,
-          and by night im a developer for Pactum.io.
+          Since beginning my journey as a developer,
+          I've been working for the blockchain startup company Pactum.io.
+          Pactum's mission is to abstract smart contract code away from the end user,
+          making user life much easier and promoting mass adoption of blockchain tech.
+          I'm confident in my ability to learn quickly, naturally curious,
+          and perpetually improving my skill set.
         </p>
       </div>
-      <div class="skills">
+      <div class="skills" id="skills">
         <h1>Skills</h1>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>javascript</li>
-          <li>React/Redux</li>
-          <li>SQL</li>
-          <li>Node.js</li>
-          <li>express</li>
-          <li>mongo.db</li>
-          <li>web3</li>
-          <li>solidity</li>
-          <li>git</li>
+          <li><img src="./images/skills/html5-img.png" alt="html-img"> </li>
+          <li><img src="./images/skills/sass-img.png" alt="sass-img"> </li>
+          <li><img src="./images/skills/js-img.png" alt="js-img"> </li>
+          <li><img src="./images/skills/react-img.png" alt="react-img"> </li>
+          <li><img src="./images/skills/redux-img.png" alt="redux-img"> </li>
+          <li><img src="./images/skills/mysql-img.png" alt="mysql-img"> </li>
+          <li><img src="./images/skills/nodeJS-img.png" alt="nodeJS-img"> </li>
+          <li><img src="./images/skills/expressJS-img.png" alt="expressJS-img"> </li>
+          <li><img src="./images/skills/mongoDB-img.png" alt="mongoDB-img"> </li>
+          <li><img  src="./images/skills/web3-img.png" alt="web3-img"> </li>
+          <li><img src="./images/skills/solidity-img.png" alt="solidity-img"> </li>
+          <li><img src="./images/skills/git-img.png" alt="git-img"> </li>
         </ul>
       </div>
-      <div class="contact-me">
-        <h1>Contact Me</h1>
-        <p>micheal.giles@pactum.io</p>
+      <div class="projects" id="projects">
+        <h1>Projects</h1>
+          <h2>Repositories</h2>
+          <ul>
+            <li>
+              <a target=”_blank” href="https://github.com/mikegg89/michealgiles.com">michealgiles.com</a>
+              <p>
+                Portfolio website made without a framework, just html, css,
+                JavaScript, and jQuery.
+              </p>
+            </li>
+            <li>
+              <a target=”_blank” href="https://github.com/mikegg89/Compressor_Log">Compressor_Log</a>
+              <img src="./images/projects/comp-log-img.png" alt="comp-log-img">
+              <p>
+                Used Express and SQL to create a site that natural gas
+                operators can log compressor data into and have an alert
+                dependent on temperatures being out of speck.
+              </p>
+            </li>
+            <li>
+              <a target=”_blank” href="https://github.com/mikegg89/cait-cake">cait-cakes</a>
+              <p>
+                Website for my wifes business, I used express and mysql.
+              </p>
+            </li>
+            <li class='projects-last-li'>
+              <a target=”_blank” href="https://github.com/mikegg89/Zombie-Legends-from-2013">Zombie-Legends</a>
+              <iframe class="youtube-video" src="https://www.youtube.com/embed/qBYDRU6ETdU?autoplay=1&controls=0&loop=1&playlist=qBYDRU6ETdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>
+                This is a game I was working on in july of 2013 with lua and the corona sdk
+              </p>
+            </li>
+        </ul>
       </div>
+      <div class="contact-me" id="Contact-me">
+        <h1>Contact Me</h1>
+        <form name="contact" netlify>
+          <p>
+            <label>Name <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Email <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label><p>Message</p>
+              <textarea name="message" rows="5" cols="30"></textarea>
+            </label>
+          </p>
+          <div class="recaptcha" data-netlify-recaptcha></div>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+      <div class="bottom"></div>
+      <footer class="footer">
+        <a target=”_blank” href="https://www.github.com/mikegg89"><img src="./images/skills/github-img.png" alt="github-img"></a>
+
+        <h5 id='copyright'>Micheal Giles</h5>
+      </footer>
     </main>
-    <footer class="footer">
-      <h5 id='copyright'>Micheal Giles</h5>
-    </footer>
+
+    <!-- javascript files and jquery for bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./js/scrolling-nav.js"></script>
+
   </body>
 </html>
