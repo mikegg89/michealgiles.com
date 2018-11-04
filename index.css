@@ -146,7 +146,7 @@ header h1 {
 }
 
 .nav-item {
-  padding-top: 5px;
+  padding: 0;
   margin-top: -4px;
   display: inline-block;
   list-style: none;
@@ -159,14 +159,20 @@ header h1 {
 }
 
 #contact-me {
-  height: 34px;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 60% 75%, 0% 75%);
+}
+
+#contact-me a {
+  padding-bottom: 10px;
 }
 
 .nav-link {
   text-decoration: none;
   color: black;
+  min-width: 120px;
+  display: block;
+  padding-top: 5px;
 }
 
 .main {
