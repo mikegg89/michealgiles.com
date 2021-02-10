@@ -251,6 +251,7 @@ header h1 {
 }
 
 .about p {
+  text-align: justify;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 20px;
